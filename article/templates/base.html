@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+
+{#    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">#}
+{#    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>#}
+{#    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>#}
+{#    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>#}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">#}
+{#    <script src="{% static 'js/jquery.js' %}"></script>#}
+{#    <script src="{% static 'js/bootstrap.js' %}"></script>#}
+</head>
+<body class="container">
+{#<nav class="navbar navbar-expand-sm bg-primary navbar-dark">#}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Logo</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+      <li><a href="current">现在时间</a> </li>
+  </ul>
+</div>
+</nav>
+
+</nav>
+{% block content %}{% endblock %}
+</body>
+</html>
